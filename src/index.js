@@ -17,10 +17,11 @@ app.route("/").get(async (req, res) => {
     return res;
   };
 
+
   const location = "somewhere";
   const start = processDate(startDate);
   const end = processDate(endDate);
-
+//   res.send('ok')
   ics.createEvent(
     {
       title: "Dinner",
